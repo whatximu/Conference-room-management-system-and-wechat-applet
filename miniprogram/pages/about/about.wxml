@@ -1,0 +1,62 @@
+
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+ 
+  <view slot="content">A B O U T</view>
+</cu-custom>
+
+<view class="cu-bar bg-white">
+  <view class="action sub-title">
+    <text class="text-xl text-bold text-blue">关于</text>
+    <text class="text-ABC text-blue">about</text>
+  </view>
+</view>
+
+<!-- <scroll-view class='box bg-white'> -->
+  <view class="cu-timeline">
+    <view class="cu-time">Now</view>
+
+    <view class="cu-item text-green cuIcon-writefill">
+      <view class="content bg-green light shadow-blur">
+        <text>2021/06/</text> 青山不改  绿水长流   
+      </view>
+    </view>
+
+
+    <view class="cu-item text-mavue cuIcon-writefill">
+      <view class="content bg-mauve light shadow-blur">
+        <text>2021/04/20</text> 完成
+      </view>
+    </view>
+    
+
+    <view class="cu-item text-olive cuIcon-appreciatefill">
+      <view class="content bg-olive light shadow-blur">
+        <text>2021/03/20</text>完成功能及逻辑设计
+      </view>
+    </view>
+    <view class="cu-item text-yellow cuIcon-crownfill">
+      <view class="content bg-yellow light shadow-blur">
+        <text>2021/03/15</text> 完成主要页面的开发
+      </view>
+    </view>
+    <view class="cu-item text-pink cuIcon-keyboard">
+      <view class="content bg-pink light shadow-blur" bindtap='z'>
+        <text>2021/03/01</text> Coding....
+      </view>
+    </view>
+    <view class="cu-item text-brown cuIcon-emojifill">
+      <view class="content bg-brown light shadow-blur">
+        <text>2021/02/15</text> 挑选框架和样式库  基于Color UI 2.0）
+      </view>
+    </view>
+    <view class="cu-item text-blue">
+      <view class="bg-blue light content shadow-blur">
+        UI：color UI
+        后台： SSM
+      </view>
+      <view class="bg-cyan light content shadow-blur">
+         预研小程序技术和框架
+      </view>
+    </view>
+  </view>
+<!-- </scroll-view> -->

@@ -1,0 +1,53 @@
+
+    <!-- <image src="/images/logo.png" class="png" mode="widthFix"></image> -->
+    <image src="图片链接" style="margin-left:50px" mode="aspectFit"></image>
+    <view class="text-xl"> <text style="color:black;">{{nickName}}</text>
+   
+    </view>
+  
+
+
+
+
+
+
+
+
+    <form bindsubmit="check">
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+    <view class="cu-item arrow" >
+     
+      <text class="cuIcon-vip lock-green"></text>
+        <view class="cu-form-group margin-left" style="  width: 95%;height: 98.75rpx;">
+		<view class="title">帐号：</view>
+		<input name="userName" type="text" placeholder="请输入您的正确信息"></input>
+    </view>
+    </view>
+    <view class="cu-item arrow">
+     
+
+        <text class="cuIcon-lock lock-green"></text>
+        <view class="cu-form-group margin-left" style="  width: 92%;height: 98.75rpx;">
+		<view class="title">密码：</view>
+		<input name="password" type="password" placeholder="请输入您的密码"></input>
+    </view>
+    </view>
+  
+  </view>
+
+
+ <button  formType="submit" class='cu-btn lines-Green round Ig shadow' style=" width:39%;height:50px;margin-top:30px; margin-left:210rpx">
+<view><text>登录</text> </view>
+
+
+</button>
+</form>
+  <view class="cu-tabbar-height"></view>
+
+
+
+
+
+
+

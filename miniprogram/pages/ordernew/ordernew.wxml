@@ -1,0 +1,184 @@
+<!--pages/order/order.wxml-->
+
+<cu-custom bgColor="bg-gradual-blue" >
+ 
+ <view slot="content">订单</view>
+</cu-custom>
+
+
+ 
+<view class="main">
+<view class="tabs">
+  <view class="tabs_tittle">
+    <view
+    wx:for="{{tabs}}"
+    wx:key="id"
+    class="title_item {{item.isActive?'active':''}}"
+    bindtap="handleItemTap" 
+    data-index="{{index}}"
+    >
+      {{item.name}}
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{hasOrder}}">
+
+ 
+  <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}" wx:for="{{OrderList}}" wx:if="{{tabs[0].isActive}}" >
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+
+        <text class="text-olive">订单编号:{{item.applyId}}  </text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+
+        <text class="text-olive">申请时间:{{item.applyDate}}</text>
+      </view>
+    </view>
+    
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/people.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">姓名:{{item.empName}}</text>
+      </view>
+    </view>
+     <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/room.png" class="png" mode="aspectFit"></image>
+        <text decode="{{true}}" class="text-grey">会议室: {{item.roomName}} &ensp;人数: {{item.meetNum}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/reason.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">用途:{{item.content}}</text>
+   </view>
+  
+    </view> 
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/time.png" class="png" mode="aspectFit"></image>
+        <text decode="{{true}}" class="text-grey">开始时间: {{item.startTime}} &ensp;结束时间: {{item.endTime}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+      <image src="../../images/order/state.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">状态:  --已预约--</text>
+      </view>
+    </view>
+    
+  </view>
+
+  
+  <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}" wx:for="{{OrderList2}}" wx:if="{{tabs[1].isActive}}" >
+    
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+
+        <text class="text-olive">订单编号:{{item.applyId}}  </text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+
+        <text class="text-olive">申请时间:{{item.applyDate}}</text>
+      </view>
+    </view>
+    
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/people.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">姓名:{{item.empName}}</text>
+      </view>
+    </view>
+     <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/room.png" class="png" mode="aspectFit"></image>
+        <text decode="{{true}}" class="text-grey">会议室: {{item.roomName}} &ensp;人数: {{item.meetNum}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/reason.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">用途:{{item.content}}</text>
+   </view>
+  
+    </view> 
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/time.png" class="png" mode="aspectFit"></image>
+        <text decode="{{true}}" class="text-grey">开始时间: {{item.startTime}} &ensp;结束时间: {{item.endTime}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+      <image src="../../images/order/state.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">状态:  --正在进行--</text>
+      </view>
+    </view>
+    
+  </view>
+
+
+
+  <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}" wx:for="{{OrderList3}}" wx:if="{{tabs[2].isActive}}" >
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <!-- <image src="../../images/order/type.png" class="png" mode="aspectFit"></image> -->
+        <text class="text-olive">订单编号:{{item.applyId}}  </text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <!-- <image src="../../images/order/type.png" class="png" mode="aspectFit"></image> -->
+        <text class="text-olive">申请时间:{{item.applyDate}}</text>
+      </view>
+    </view>
+    
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/people.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">姓名:{{item.empName}}</text>
+      </view>
+    </view>
+     <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/room.png" class="png" mode="aspectFit"></image>
+        <text decode="{{true}}" class="text-grey">会议室: {{item.roomName}} &ensp;人数: {{item.meetNum}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/reason.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">用途:{{item.content}}</text>
+   </view>
+  
+    </view> 
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/time.png" class="png" mode="aspectFit"></image>
+        <text decode="{{true}}" class="text-grey">开始时间: {{item.startTime}} &ensp;结束时间: {{item.endTime}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+      <image src="../../images/order/state.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">状态:  --已结束--</text>
+      </view>
+    </view>
+    
+  </view>
+
+
+</view>
+
+
+<view wx:else>
+  <text class="noOrder" style="margin-left:290rpx">暂无记录！！</text>
+</view>
+</view>
+

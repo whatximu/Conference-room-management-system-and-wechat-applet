@@ -1,0 +1,63 @@
+/* pages/Room/Room.wxss *//* pages/order/order.wxss */
+.tabs_tittle{
+    display: flex;
+    padding: 10rpx 0;
+  }
+  .title_item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .active{
+    color:rgb(0, 174, 255);
+    border-bottom:5rpx solid currentColor;
+  }
+  .List{
+    display: flex;
+    width: 100%;
+    /* padding: 20rpx; */
+    /* margin: 20rpx,20rpx,20rpx; */
+    /* padding: 20rpx,20rpx,20rpx,20rpx; */
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:baseline;
+    border:5rpx solid #7ce0f1e5 ;
+  }
+  .List-user{
+    display: flex;
+    border-bottom: 3rpx solid #7ce0f1e5;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin: 20rpx,20rpx,20prx;
+  }
+  .List-order{
+    /* margin: 20rpx,20rpx,20rpx,20rpx; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    border-bottom: 3rpx solid #7ce0f1e5;
+  }
+  .status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: 3rpx solid #7ce0f1e5;
+  }
+  .list{
+    width: 100%;
+  }
+  
+  .orders-info-status{
+    font-size: 40rpx;
+    color: #7ce0f1e5;
+    /* display: flex;
+    flex-direction: row-reverse; */
+  }
+  

@@ -1,0 +1,105 @@
+
+  <cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg" isBack="{{true}}">
+  <view slot="content">预定</view>
+</cu-custom>
+
+<view class="padding text-center bg-white">
+  <view class="padding-xl radius bg-blue light text-blue margin-top text-lg text-bold">会议室 预定</view>
+</view>
+
+<view class='bg-white light box'>
+  <view class='padding bg-white'>
+    <view class="cu-form-group margin-top bg-olive light radius">
+        <view class="title">会议室</view>
+        <picker bindchange="pickerChange" value="{{room}}" range="{{picker}}">
+          <view class="picker txt-color">
+            {{room?picker[room]:'请选择会议室'}}
+          </view>
+        </picker>
+      </view>
+      <view class="cu-form-group margin-top bg-olive light radius text-right">
+        <view class="title">时长</view>
+        <input type="number" bindinput="changeLimit" placeholder="输入预定时长，最少0.5小时" data-input="inputTime" value="{{show_time}}"></input>
+        <view class="cu-capsule radius">
+          <view class="cu-tag bg-olive light text-df">
+            小时
+          </view>
+          <!-- <view class="cu-tag line-olive">
+            小时
+          </view> -->
+        </view>
+      </view>
+
+     
+      <form  bindsubmit="submit_order">
+	<view class="cu-form-group margin-top">
+		<view class="title" placeholder="123">预约日期：</view>
+		<input placeholder="两字短标题"value="{{start_day}}" ></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">开始时间：</view>
+		<input placeholder="三字标题" value="{{start_time}}"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">结束时间：</view>
+		<input placeholder="统一标题的宽度" value="{{end_time}}"></input>
+  </view>
+  <view class="cu-form-group">
+		<view class="title">会议人数：</view>
+		<input name='people' placeholder="请输入会议人数"></input>
+  </view>
+  <view class="cu-form-group">
+		<view class="title">预约事由：</view>
+		<input name='content' placeholder="请输入"></input>
+  </view>
+  
+  
+  <view class="grid col-5 padding-sm">
+      
+       
+    
+
+      <view class="margin-tb-sm text-center"  >
+        <button class="cu-btn round line-green round Ig shadow" style=" width:190%;height: 40px;margin-left:20px "bindtap='btnClick2'>{{picker[room]}}预订情况</button>
+      </view>
+    
+      <view class="margin-tb-sm text-center"  >
+        <button class="cu-btn round line-green round Ig shadow" style=" width:150%;height: 40px;margin-left:140px "formType="submit">{{picker[room]}}预订</button>
+      </view>
+    
+           
+          </view> 
+    
+      </form>
+
+
+
+       
+      
+       
+      
+   
+
+        <!-- <button class="cu-btn bg-blue btn round lg margin-right" bindtap='btnClick2'>{{picker[room]}}预定情况</button> -->
+
+      </view> 
+  </view>
+
+ 
+
+
+
+<yycalendar 
+    show='{{isShow}}' 
+    beginTime="{{beginTime}}" 
+    endTime="{{endTime}}" 
+    timeGap="{{timeGap}}" 
+    timeSlotList="{{timeSlotList}}"
+    themeColor="{{themeColor}}" 
+    showOverdue="{{showOverdue}}" 
+    calendarType="{{calendarType}}" 
+    
+    days="{{days}}"
+    time="{{time}}"
+    bind:yybindchange="_yybindchange" 
+    bind:yybindhide="_yybindhide"/>

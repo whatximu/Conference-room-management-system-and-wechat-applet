@@ -1,0 +1,247 @@
+page {
+  padding-bottom: 50rpx;
+  background-color: #aadbd9;
+}
+.UCenter-bg {
+  background-size: cover;
+  height: 550rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.UCenter-bg text {
+  opacity: 0.8;
+}
+
+.UCenter-bg image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.UCenter-bg .gif-wave{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;  
+  height: 100rpx;   
+}
+
+map,.mapBox{
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;  
+  height: 100rpx;   
+}
+
+map,.mapBox{
+  width: 750rpx;
+  height: 300rpx;
+}
+.result{
+  /* background-color: darkgray; */
+  display: flex;
+  justify-content: space-around;
+ flex-direction: column;
+ align-items: center;
+  height: 150rpx;
+ width:100%;
+ margin:2px auto;
+ /* background-color: rgb(192, 214, 214); */
+ border-bottom: 30rpx solid #edededad;
+ border-top: 30rpx solid #edededad;
+}
+.header {
+  padding: 0rpx;
+  padding-top: 40rpx;
+  padding-bottom: 50rpx;
+  width: 107%;
+}
+.header2 {
+  padding-left: 20rpx;
+  padding-top: 30rpx;
+  padding-right: 20rpx;
+  width: 100%;
+}
+
+.iimg{
+  width: 45rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  top: 0rpx;
+  position: relative;
+}
+
+.user_box {
+  display: flex;
+  align-items: center;
+  width: 94%;
+  height: 115px;
+  background: rgba(255,255,255,0.7);
+}
+
+
+.logo {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.logo image {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  will-change: transform;
+}
+
+.user_name {
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
+.user_name image {
+  margin-left: 16rpx;
+  width: 84rpx;
+  height: 31rpx;
+}
+
+.headname{
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.nav {
+  margin-top: 5px;
+  font-size: 34rpx;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+}
+
+.nav .item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #968f8f2f;
+  padding: 20rpx 0;
+}
+.container{
+  /*弹性模型*/
+  display:flex;
+  /*垂直方向 列方向 排布*/
+  flex-direction:column;
+  /*居中*/
+  /*align-items:center;*/
+  /*要从整体解决排布的问题是最好的方案*/ 
+}
+
+.firstlayout{
+ /*弹性模型*/
+  display:flex;
+  /*垂直方向 列方向 排布*/
+  flex-direction:column;
+  /*居中*/
+  align-items:center;
+  /*要从整体解决排布的问题是最好的方案*/ 
+  width: 100%;
+  height: 350rpx;
+  background: #868f99;
+}
+
+.firstimagestyle{
+width: 180rpx;
+height: 180rpx;
+margin: 20rpx;
+border-radius: 50%;
+border:3px solid #FFFFFF;
+}
+
+.firstfontstyle{
+font-size:34rpx;
+color: #FFFFFF;
+}
+
+.secondlayout{
+ width: 550rpx;
+ height: 50rpx;
+ /*弹性模型*/
+  display:flex;
+  flex-direction: row;
+  /*居中*/
+ /*align-items:center;*/
+ justify-content:center;
+ margin-top: 25rpx;
+}
+.secondlayoutitem{
+  width: 50%;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+}
+.lineview{
+width: 2rpx;
+height: 40rpx;
+background: #FFFFFF;
+margin-top: 6rpx;
+}
+
+.thirdlayout{
+  width:100%;
+ height: 100rpx;
+ /*弹性模型*/
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.secondimagestyle{
+width: 40rpx;
+height: 40rpx;
+margin: 20rpx;
+}
+
+.fourthlayout{
+width:50%;
+height: 100%;
+text-align:right;
+}
+.thirdimagestyle{
+width: 60rpx;
+height: 60rpx;
+margin: 20rpx;
+}
+.secondfontstyle{
+ font-size:36rpx;
+ color: #000000;
+}
+
+.lineviewtwo{
+width: 100%rpx;
+height: 1px;
+background: #708090;
+}
+.container{
+  /*弹性模型*/
+  display:flex;
+  /*垂直方向 列方向 排布*/
+  flex-direction:column;
+  /*居中*/
+  /*align-items:center;*/
+  /*要从整体解决排布的问题是最好的方案*/ 
+}
+.png{
+  padding: 10rpx;
+}

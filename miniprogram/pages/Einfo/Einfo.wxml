@@ -1,0 +1,52 @@
+<!--pages/Room/Room.wxml-->
+<cu-custom bgColor="bg-gradual-blue"  isBack="{{true}}">
+ 
+ <view slot="content">会议室设备信息列表</view>
+</cu-custom>
+
+
+  <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}" wx:for="{{RoomList}}"  >
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="text-olive">会议室ID:{{item.id}}  </text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}" wx:if="item.info=0">
+      <view class="content">
+        <text class="text-olive">设备情况:正常</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}" wx:elif="item.info=1">
+      <view class="content">
+
+        <text class="text-olive">设备情况:部分损坏</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}" wx:elif="item.info=2">
+      <view class="content">
+
+        <text class="text-olive">设备情况:无法使用</text>
+      </view>
+    </view>
+  
+
+    <view class="cu-item {{menuArrow?'arrow':''}}" wx:if="item.state=0">
+      <view class="content">
+      <image src="../../images/order/state.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">状态:  --正常--</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}" wx:elif="item.stat=1">
+      <view class="content">
+      <image src="../../images/order/state.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">状态:  --已报修--</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}" wx:elif="item.stat=2">
+      <view class="content">
+      <image src="../../images/order/state.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">状态:  --正在维修--</text>
+      </view>
+    </view>
+    
+  </view>

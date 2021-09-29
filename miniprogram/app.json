@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/me/me",
+    "pages/Room/Room",
+    "pages/personInfo/personInfo",
+    "pages/register/register",
+    "pages/order/order",
+    "pages/changePwd/changePwd",
+    "pages/ordernew/ordernew",
+    "pages/about/about",
+    "pages/Submit/Submit",
+    "pages/Submit2/Submit2",
+    "pages/delorder/delorder",
+    "pages/Einfo/Einfo",
+    "pages/record/record",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "谦会议",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#2db7f5",
+    "color": "#909090",
+    "list": [
+      {
+        "text": "首页",
+        "iconPath": "images/main.png",
+        "selectedIconPath": "images/main-select.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "订单",
+        "iconPath": "images/answer.png",
+        "selectedIconPath": "images/answer-select.png",
+        "pagePath": "pages/ordernew/ordernew"
+      },
+      {
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-select.png",
+        "pagePath": "pages/me/me"
+      }
+    ]
+  },
+
+  "plugins": {
+    "myPlugin": {
+      "version": "2.2.1",
+      "provider": "wx6b6cb15df2836ebe"
+    }
+  },
+
+  	
+
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

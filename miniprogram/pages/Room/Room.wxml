@@ -1,0 +1,55 @@
+<!--pages/Room/Room.wxml-->
+<cu-custom bgColor="bg-gradual-blue"  isBack="{{true}}" >
+ 
+ <view slot="content">会议室列表</view>
+</cu-custom>
+
+
+
+
+
+
+
+  <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}" wx:for="{{RoomList}}"  >
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <!-- <image src="../../images/order/type.png" class="png" mode="aspectFit"></image> -->
+        <text class="text-olive">会议室ID:{{item.roomName}}  </text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <!-- <image src="../../images/order/type.png" class="png" mode="aspectFit"></image> -->
+        <text class="text-olive">会议室位置:{{item.location}}</text>
+      </view>
+    </view>
+    
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/people.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">容纳人数:{{item.population}}</text>
+      </view>
+    </view>
+  
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <image src="../../images/order/reason.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">设备:{{item.device}}</text>
+   </view>
+  
+    </view> 
+
+    <view class="cu-item {{menuArrow?'arrow':''}}" wx:if="item.state=0">
+      <view class="content">
+      <image src="../../images/order/state.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">状态:  --可预约--</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}" wx:elif="item.state=1">
+      <view class="content">
+      <image src="../../images/order/state.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">状态:  --暂不可预约--</text>
+      </view>
+    </view>
+    
+  </view>
